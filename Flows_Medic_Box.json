@@ -1,0 +1,2781 @@
+[
+    {
+        "id": "45bdddcb3db1de4f",
+        "type": "tab",
+        "label": "Medic Box",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "aecc3e96053b78fa",
+        "type": "tab",
+        "label": "Em branco",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "e2a7269faff86dcc",
+        "type": "ui_group",
+        "name": "Gerenciamento de horários",
+        "tab": "669c70c02db57f42",
+        "order": 1,
+        "disp": true,
+        "width": "10",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "669c70c02db57f42",
+        "type": "ui_tab",
+        "name": "Smart Box - Auxilio de medicamentos",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "4239e54d0c4a7196",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "7a5bf1abb28ed346",
+        "type": "telegram bot",
+        "botname": "Medic Box",
+        "usernames": "",
+        "chatids": "",
+        "baseapiurl": "",
+        "updatemode": "polling",
+        "pollinterval": "300",
+        "usesocks": false,
+        "sockshost": "",
+        "socksprotocol": "socks5",
+        "socksport": "6667",
+        "socksusername": "anonymous",
+        "sockspassword": "",
+        "bothost": "",
+        "botpath": "",
+        "localbotport": "8443",
+        "publicbotport": "8443",
+        "privatekey": "",
+        "certificate": "",
+        "useselfsignedcertificate": false,
+        "sslterminated": false,
+        "verboselogging": false
+    },
+    {
+        "id": "67fe319ccf14a6ae",
+        "type": "ui_spacer",
+        "z": "45bdddcb3db1de4f",
+        "name": "spacer",
+        "group": "e2a7269faff86dcc",
+        "order": 22,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "6b5217cef76ae79e",
+        "type": "ui_spacer",
+        "z": "45bdddcb3db1de4f",
+        "name": "spacer",
+        "group": "e2a7269faff86dcc",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "30a99cc957f3f3e2",
+        "type": "ui_spacer",
+        "z": "45bdddcb3db1de4f",
+        "name": "spacer",
+        "group": "e2a7269faff86dcc",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "65da567e72461dd4",
+        "type": "ui_spacer",
+        "z": "45bdddcb3db1de4f",
+        "name": "spacer",
+        "group": "e2a7269faff86dcc",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "4049c52c0e5ffaa7",
+        "type": "ui_spacer",
+        "z": "45bdddcb3db1de4f",
+        "name": "spacer",
+        "group": "e2a7269faff86dcc",
+        "order": 17,
+        "width": 3,
+        "height": 1
+    },
+    {
+        "id": "0a76280c2929c919",
+        "type": "ui_spacer",
+        "z": "45bdddcb3db1de4f",
+        "name": "spacer",
+        "group": "e2a7269faff86dcc",
+        "order": 18,
+        "width": 10,
+        "height": 1
+    },
+    {
+        "id": "bb2f0904fd6ce9f6",
+        "type": "ui_text",
+        "z": "45bdddcb3db1de4f",
+        "group": "e2a7269faff86dcc",
+        "order": 4,
+        "width": 10,
+        "height": 1,
+        "name": "",
+        "label": "Selecione o horário do alarme:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 230,
+        "y": 980,
+        "wires": []
+    },
+    {
+        "id": "d33561ac9bc9e5b4",
+        "type": "ui_button",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "group": "e2a7269faff86dcc",
+        "order": 21,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Ativar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "payload",
+        "topicType": "msg",
+        "x": 150,
+        "y": 1640,
+        "wires": [
+            [
+                "f5a3605add2d41a5"
+            ]
+        ]
+    },
+    {
+        "id": "103e87d818c27891",
+        "type": "ui_button",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "group": "e2a7269faff86dcc",
+        "order": 23,
+        "width": 5,
+        "height": 1,
+        "passthru": false,
+        "label": "Desativar",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "false",
+        "payloadType": "bool",
+        "topic": "payload",
+        "topicType": "msg",
+        "x": 160,
+        "y": 1680,
+        "wires": [
+            [
+                "c147ceed808a8dc6"
+            ]
+        ]
+    },
+    {
+        "id": "df98bab024935e98",
+        "type": "ui_text",
+        "z": "45bdddcb3db1de4f",
+        "group": "e2a7269faff86dcc",
+        "order": 20,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Este alarme está :",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 850,
+        "y": 1660,
+        "wires": []
+    },
+    {
+        "id": "c147ceed808a8dc6",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Altera variável",
+        "func": "global.set('funcaoAlarme', 0);\n\nmsg.payload ='DESATIVADO';\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1680,
+        "wires": [
+            [
+                "7eacfb7eda6eb934"
+            ]
+        ]
+    },
+    {
+        "id": "cdcc1a20b5c90b70",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Relógio digital & hora atual",
+        "info": "",
+        "x": 170,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "bbc115884cafa004",
+        "type": "ui_template",
+        "z": "45bdddcb3db1de4f",
+        "group": "e2a7269faff86dcc",
+        "name": "Time Picker",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "format": "<style>\n    .formatTimePicker {      \n        padding: 0.8em;\n        font-size: 1.2em;\n    }\n</style>\n\n<div>\n    <input type=\"time\" id=\"timeFrom\" class=\"timepicker formatTimePicker\" >\n    \n</div>\n\n<script>\n(function(scope) {\n    var timepicker = $(\".timepicker\")\n    timepicker.on('change', function(evt) {\n        scope.send({ topic: this.id, payload: this.value });\n    });\n})(scope);\n\n</script>",
+        "storeOutMessages": true,
+        "fwdInMessages": true,
+        "resendOnRefresh": true,
+        "templateScope": "local",
+        "className": "",
+        "x": 170,
+        "y": 1020,
+        "wires": [
+            [
+                "012c6ee3a5effac7"
+            ]
+        ]
+    },
+    {
+        "id": "4b47ecd63042f83e",
+        "type": "ui_text",
+        "z": "45bdddcb3db1de4f",
+        "group": "e2a7269faff86dcc",
+        "order": 6,
+        "width": 10,
+        "height": 1,
+        "name": "",
+        "label": "Selecione os dias do alarme:",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 200,
+        "y": 1180,
+        "wires": []
+    },
+    {
+        "id": "8ba25da40a2b358e",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Seg",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 8,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "seg_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "seg_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1260,
+        "wires": [
+            [
+                "508812dfddf0edf2"
+            ]
+        ]
+    },
+    {
+        "id": "49d659be19dc4a2a",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Ter",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 9,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ter_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "ter_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1300,
+        "wires": [
+            [
+                "f2c4bfbcc19feaa1"
+            ]
+        ]
+    },
+    {
+        "id": "fa416600e71bcf7b",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Qua",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 10,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "qua_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "qua_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1340,
+        "wires": [
+            [
+                "05039ebc69378bb1"
+            ]
+        ]
+    },
+    {
+        "id": "54026d213850ea9e",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Qui",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 11,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "qui_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "qui_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1380,
+        "wires": [
+            [
+                "4f100d7fc6313125"
+            ]
+        ]
+    },
+    {
+        "id": "81874a1dd2cb6d7d",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Sex",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 14,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "sex_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "sex_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1420,
+        "wires": [
+            [
+                "1f8c1d87941344af"
+            ]
+        ]
+    },
+    {
+        "id": "b5a4540b7f6c623e",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Sáb",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 15,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "sab_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "sab_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1460,
+        "wires": [
+            [
+                "2d7d6c90f236fb5a"
+            ]
+        ]
+    },
+    {
+        "id": "45fddc065473abe8",
+        "type": "ui_switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "label": "Dom",
+        "tooltip": "",
+        "group": "e2a7269faff86dcc",
+        "order": 16,
+        "width": 2,
+        "height": 1,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "topic",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "dom_on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "dom_off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 670,
+        "y": 1500,
+        "wires": [
+            [
+                "69e5d6ac64291aa6"
+            ]
+        ]
+    },
+    {
+        "id": "508812dfddf0edf2",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if(msg.payload == 'seg_on'){\n    global.set('alarme_seg',1)\n}\nif (msg.payload == 'seg_off') {\n    global.set('alarme_seg', 0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1260,
+        "wires": [
+            [
+                "034eb4ce5782f57c"
+            ]
+        ]
+    },
+    {
+        "id": "c7b0cfc241f68e02",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Carrega valores das variáveis",
+        "info": "",
+        "x": 440,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "f2c4bfbcc19feaa1",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if (msg.payload == 'ter_on') {\n    global.set('alarme_ter', 1)\n}\nif (msg.payload == 'seg_off') {\n    global.set('alarme_ter', 0)\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1300,
+        "wires": [
+            [
+                "0f5a31aeaf4524d6"
+            ]
+        ]
+    },
+    {
+        "id": "05039ebc69378bb1",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if (msg.payload == 'qua_on') {\n    global.set('alarme_qua', 1)\n}\nif (msg.payload == 'qua_off') {\n    global.set('alarme_qua', 0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1340,
+        "wires": [
+            [
+                "4cdccc7df7d9b60e"
+            ]
+        ]
+    },
+    {
+        "id": "4f100d7fc6313125",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if (msg.payload == 'qui_on') {\n    global.set('alarme_qui', 1)\n}\nif (msg.payload == 'qui_off') {\n    global.set('alarme_qui', 0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1380,
+        "wires": [
+            [
+                "ab696774d5d10317"
+            ]
+        ]
+    },
+    {
+        "id": "1f8c1d87941344af",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if (msg.payload == 'sex_on') {\n    global.set('alarme_sex', 1)\n}\nif (msg.payload == 'sex_off') {\n    global.set('alarme_sex', 0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1420,
+        "wires": [
+            [
+                "9d804059b98f72ab"
+            ]
+        ]
+    },
+    {
+        "id": "2d7d6c90f236fb5a",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if (msg.payload == 'sab_on') {\n    global.set('alarme_sab', 1)\n}\nif (msg.payload == 'sab_off') {\n    global.set('alarme_sab', 0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1460,
+        "wires": [
+            [
+                "8d53affa4cc8c06f"
+            ]
+        ]
+    },
+    {
+        "id": "69e5d6ac64291aa6",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "if (msg.payload == 'dom_on') {\n    global.set('alarme_dom', 1)\n}\nif (msg.payload == 'dom_off') {\n    global.set('alarme_dom', 0)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 860,
+        "y": 1500,
+        "wires": [
+            [
+                "d6d8018101adfc38"
+            ]
+        ]
+    },
+    {
+        "id": "e435e80b1c2a7e67",
+        "type": "ui_text",
+        "z": "45bdddcb3db1de4f",
+        "group": "e2a7269faff86dcc",
+        "order": 19,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alarme configurado para: ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "className": "",
+        "x": 1170,
+        "y": 1020,
+        "wires": []
+    },
+    {
+        "id": "957614d2248a23f8",
+        "type": "ui_digital_clock",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "group": "e2a7269faff86dcc",
+        "order": 3,
+        "width": 10,
+        "height": 3,
+        "x": 310,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "7eacfb7eda6eb934",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/statusAlarme",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 550,
+        "y": 1660,
+        "wires": [
+            [
+                "df98bab024935e98"
+            ]
+        ]
+    },
+    {
+        "id": "46608db48b6ba631",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/statusAlarme",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 450,
+        "y": 1720,
+        "wires": [
+            [
+                "6b0a406d852ca88c",
+                "da59847b0fdf6aa6"
+            ]
+        ]
+    },
+    {
+        "id": "6658d3c8eb09adab",
+        "type": "inject",
+        "z": "45bdddcb3db1de4f",
+        "name": "Carrega variável (boot)",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 210,
+        "y": 1720,
+        "wires": [
+            [
+                "46608db48b6ba631"
+            ]
+        ]
+    },
+    {
+        "id": "f5a3605add2d41a5",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Altera variável",
+        "func": "global.set('funcaoAlarme',1);\n\nmsg.payload ='ATIVADO';\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 1640,
+        "wires": [
+            [
+                "7eacfb7eda6eb934"
+            ]
+        ]
+    },
+    {
+        "id": "6b0a406d852ca88c",
+        "type": "debug",
+        "z": "45bdddcb3db1de4f",
+        "name": "debug 20",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 660,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "c3f2c730ec883284",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/horarioConfigurado",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 630,
+        "y": 1020,
+        "wires": [
+            [
+                "e435e80b1c2a7e67"
+            ]
+        ]
+    },
+    {
+        "id": "55fd5df2ee1ca94f",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/horarioConfigurado",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 630,
+        "y": 1060,
+        "wires": [
+            [
+                "93c564d946589638"
+            ]
+        ]
+    },
+    {
+        "id": "f215d7327bcf7e32",
+        "type": "inject",
+        "z": "45bdddcb3db1de4f",
+        "name": "Carrega variável (boot)",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 350,
+        "y": 1060,
+        "wires": [
+            [
+                "55fd5df2ee1ca94f"
+            ]
+        ]
+    },
+    {
+        "id": "012c6ee3a5effac7",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "var pickerHora = parseInt(msg.payload.substring(0, msg.payload.length - 3));\nvar pickerMinuto = parseInt(msg.payload.substring(3, msg.payload.length));\n\nglobal.set('pickerHora', pickerHora);\nglobal.set('pickerMinuto', pickerMinuto);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 1020,
+        "wires": [
+            [
+                "c3f2c730ec883284"
+            ]
+        ]
+    },
+    {
+        "id": "034eb4ce5782f57c",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/seg",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1260,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "0f5a31aeaf4524d6",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/ter",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1050,
+        "y": 1300,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "4cdccc7df7d9b60e",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/qua",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1340,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "ab696774d5d10317",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/qui",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1380,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "9d804059b98f72ab",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/sex",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1420,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "8d53affa4cc8c06f",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/sab",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1460,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "d6d8018101adfc38",
+        "type": "file",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/dom",
+        "filenameType": "str",
+        "appendNewline": false,
+        "createDir": false,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 1500,
+        "wires": [
+            [
+                "cf14ac226a9b8d9a"
+            ]
+        ]
+    },
+    {
+        "id": "cf14ac226a9b8d9a",
+        "type": "debug",
+        "z": "45bdddcb3db1de4f",
+        "name": "debug 23",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1320,
+        "y": 1400,
+        "wires": []
+    },
+    {
+        "id": "b51a345cf7259292",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/seg",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1260,
+        "wires": [
+            [
+                "8ba25da40a2b358e"
+            ]
+        ]
+    },
+    {
+        "id": "d81236ad2d91014e",
+        "type": "inject",
+        "z": "45bdddcb3db1de4f",
+        "name": "carrega variável",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 1380,
+        "wires": [
+            [
+                "b51a345cf7259292",
+                "f7967df55e919851",
+                "798e83ede93d16ee",
+                "6fe33f8d33ba5f7e",
+                "d89649f41a2833ab",
+                "e78af2cc42708965",
+                "8e2e70b47a183721"
+            ]
+        ]
+    },
+    {
+        "id": "f7967df55e919851",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/ter",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 410,
+        "y": 1300,
+        "wires": [
+            [
+                "49d659be19dc4a2a"
+            ]
+        ]
+    },
+    {
+        "id": "798e83ede93d16ee",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/qua",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1340,
+        "wires": [
+            [
+                "fa416600e71bcf7b"
+            ]
+        ]
+    },
+    {
+        "id": "6fe33f8d33ba5f7e",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/qui",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1380,
+        "wires": [
+            [
+                "54026d213850ea9e"
+            ]
+        ]
+    },
+    {
+        "id": "d89649f41a2833ab",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/sex",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1420,
+        "wires": [
+            [
+                "81874a1dd2cb6d7d"
+            ]
+        ]
+    },
+    {
+        "id": "e78af2cc42708965",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/sab",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1460,
+        "wires": [
+            [
+                "b5a4540b7f6c623e"
+            ]
+        ]
+    },
+    {
+        "id": "8e2e70b47a183721",
+        "type": "file in",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "filename": "medicBox/dom",
+        "filenameType": "str",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 420,
+        "y": 1500,
+        "wires": [
+            [
+                "45fddc065473abe8"
+            ]
+        ]
+    },
+    {
+        "id": "93c564d946589638",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata mensagem",
+        "func": "var pickerHora = parseInt(msg.payload.substring(0, msg.payload.length - 3));\nvar pickerMinuto = parseInt(msg.payload.substring(3, msg.payload.length));\n\nglobal.set('pickerHora', pickerHora);\nglobal.set('pickerMinuto', pickerMinuto);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1060,
+        "wires": [
+            [
+                "e435e80b1c2a7e67"
+            ]
+        ]
+    },
+    {
+        "id": "865727996b755aa0",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Botões para o usuário Ativar / Desativar o alarme",
+        "info": "",
+        "x": 280,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "8ef71bcfea15b8fe",
+        "type": "inject",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "957614d2248a23f8",
+                "82a3a1692e2437dc"
+            ]
+        ]
+    },
+    {
+        "id": "ac52012bb9b45e56",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Horário bate?",
+        "func": "// Puxa o horário atual\nvar d = new Date();\nvar hours = d.getHours()\nvar minutes = d.getMinutes();\nvar seconds = d.getSeconds();\n\n// Puxa horário do alarme configurado\nvar pickerHora = global.get('pickerHora');\nvar pickerMinuto = global.get('pickerMinuto');\n\nif (pickerHora == hours && pickerMinuto == minutes && seconds == 0){\n    global.set('alarmeDisparado',1)\n    return msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 340,
+        "wires": [
+            [
+                "1bb786ded274fd59"
+            ]
+        ]
+    },
+    {
+        "id": "2d5861fba64e85b5",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Verifica condições e cancela Alarme",
+        "func": "var tampaEstavaAberta = global.get('tampaEstavaAberta') || 0;\nvar alarmeDisparado = global.get('alarmeDisparado') || 0;\n\nvar tampaAberta = msg.payload;\n\nif(tampaAberta == 1 && alarmeDisparado == 1 && tampaEstavaAberta == 0){\n    global.set('alarmeDisparado', 0)\n    msg.payload = 'cancela';   \n    return msg;\n}\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 850,
+        "y": 840,
+        "wires": [
+            [
+                "06c4170090b14f46"
+            ]
+        ]
+    },
+    {
+        "id": "bd5e9a9255c8e874",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "O dia atual possui alarme ativo?",
+        "func": "var d = new Date();\nvar day = d.getDay();\n\n\nvar alarme_dom = global.get('alarme_dom');\nvar alarme_seg = global.get('alarme_seg');\nvar alarme_ter = global.get('alarme_ter');\nvar alarme_qua = global.get('alarme_qua');\nvar alarme_qui = global.get('alarme_qui');\nvar alarme_sex = global.get('alarme_sex');\nvar alarme_sab = global.get('alarme_sab');\n\nif (day == 0 && alarme_dom == 1) {\n    msg.payload = 'dom';\n    return msg;\n}\n\nif (day == 1 && alarme_seg == 1) {\n    msg.payload = 'seg';\n    return msg;\n}\n\nif (day == 2 && alarme_ter == 1) {\n    msg.payload = 'ter';\n    return msg;\n}\n\nif (day == 3 && alarme_qua == 1) {\n    msg.payload = 'qua';\n    return msg;\n}\n\nif(day == 4 && alarme_qui == 1){\n    msg.payload = 'qui';\n    return msg;\n}\n\nif (day == 5 && alarme_sex == 1) {\n    msg.payload = 'sex';\n    return msg;\n}\n\nif (day == 6 && alarme_sab == 1) {\n    msg.payload = 'sab';\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 550,
+        "y": 340,
+        "wires": [
+            [
+                "ac52012bb9b45e56"
+            ]
+        ]
+    },
+    {
+        "id": "1477b810e6559315",
+        "type": "trigger",
+        "z": "45bdddcb3db1de4f",
+        "name": "Dispara alerta por 60 seg",
+        "op1": "1",
+        "op2": "0",
+        "op1type": "num",
+        "op2type": "num",
+        "duration": "10",
+        "extend": false,
+        "overrideDelay": false,
+        "units": "s",
+        "reset": "cancela",
+        "bytopic": "all",
+        "topic": "topic",
+        "outputs": 1,
+        "x": 270,
+        "y": 640,
+        "wires": [
+            [
+                "18d66370c3412826"
+            ]
+        ]
+    },
+    {
+        "id": "441ac47852f8958a",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Dispara mensagem telegram",
+        "func": "// Caso o trigger  não seja desativado\n// a mensagem via telegram é disparada\n\nglobal.set('alarmeDisparado', 0)    \n\nmsg.payload = {}\nmsg.payload.chatId = 977983065;\nmsg.payload.type = 'message';\n\nvar d = new Date();\nvar hours = d.getHours()\nvar minutes = d.getMinutes();\n\nmsg.payload.content = '📣Alerta disparado \\n' + '\\nNão houve interação com a caixa de remédios!\\n\\n🕜'+hours +\":\"+ minutes;\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 880,
+        "y": 700,
+        "wires": [
+            [
+                "fdd5496c01bcdea5"
+            ]
+        ]
+    },
+    {
+        "id": "fdd5496c01bcdea5",
+        "type": "telegram sender",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "bot": "7a5bf1abb28ed346",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1110,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e1daf62763e07619",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "sudo gpioget gpiochip0 16",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Status Tampa",
+        "x": 360,
+        "y": 840,
+        "wires": [
+            [
+                "77119732716a6a91"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "77119732716a6a91",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Formata a mensagem",
+        "func": "msg.payload = parseInt(msg.payload.substring(0));\n\n// Devido a construção do circuito o sinal\n// quando a tampa está fechada o sinal é lido 1\n\n// Aqui o sinal de leitura é invertido para \n// facilitar a interpretação\n\n\nif(msg.payload == 1){\n    msg.payload = 0;\n    global.set('tampaAberta',0)\n}\nelse if (msg.payload == 0) {\n   msg.payload = 1;\n   global.set('tampaAberta', 1)\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 560,
+        "y": 840,
+        "wires": [
+            [
+                "2d5861fba64e85b5"
+            ]
+        ]
+    },
+    {
+        "id": "e8cbb7586aadc3b7",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Monitora se a tampa abriu",
+        "info": "",
+        "x": 210,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "82a3a1692e2437dc",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Alarme ativado?",
+        "func": "// Variável de controle se o alarme já está ativo\nvar alarmeDisparado = global.get('alarmeDisparado') || 0;\n\n// Função alarme Ativado/Desativado\nvar funcaoAlarme = global.get('funcaoAlarme') || 0;\n\nif (funcaoAlarme == 1 && alarmeDisparado == 0){\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 320,
+        "y": 340,
+        "wires": [
+            [
+                "bd5e9a9255c8e874"
+            ]
+        ]
+    },
+    {
+        "id": "f92756accfc863bc",
+        "type": "switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "Tampa está aberta?",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "num"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "num"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 1200,
+        "y": 340,
+        "wires": [
+            [
+                "7e8f4c6a74944dae",
+                "10cb38caacb59c49",
+                "c69f11b09d13cb19"
+            ],
+            [
+                "bcb629dec343a421"
+            ]
+        ]
+    },
+    {
+        "id": "1bb786ded274fd59",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Lê status tampa",
+        "func": "msg.payload = global.get('tampaAberta') || 0;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 340,
+        "wires": [
+            [
+                "f92756accfc863bc"
+            ]
+        ]
+    },
+    {
+        "id": "69f949bb64b6bd23",
+        "type": "inject",
+        "z": "45bdddcb3db1de4f",
+        "name": "1 seg",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 170,
+        "y": 840,
+        "wires": [
+            [
+                "e1daf62763e07619"
+            ]
+        ]
+    },
+    {
+        "id": "ace1e6de0fbc60eb",
+        "type": "delay",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1940,
+        "y": 560,
+        "wires": [
+            [
+                "c69f11b09d13cb19"
+            ]
+        ]
+    },
+    {
+        "id": "8a613eb3b97b629d",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 17=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Liga Buzzer",
+        "x": 1010,
+        "y": 520,
+        "wires": [
+            [
+                "2564e39ac63c26df"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "91ec906406f9027d",
+        "type": "delay",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1380,
+        "y": 520,
+        "wires": [
+            [
+                "d63ee09820c79f48"
+            ]
+        ]
+    },
+    {
+        "id": "d63ee09820c79f48",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 17=0",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Desliga Buzzer",
+        "x": 1540,
+        "y": 520,
+        "wires": [
+            [
+                "6fd476b1f4656d73"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "c69f11b09d13cb19",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Controle do loop",
+        "func": "var alarmeDisparado = global.get('alarmeDisparado') || 0;\n\nif (alarmeDisparado == 1){\n    return msg;\n}\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 560,
+        "wires": [
+            [
+                "8a613eb3b97b629d"
+            ]
+        ]
+    },
+    {
+        "id": "2564e39ac63c26df",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 21=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Liga Led Vermelho",
+        "x": 1190,
+        "y": 520,
+        "wires": [
+            [
+                "91ec906406f9027d"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "6fd476b1f4656d73",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 21=0",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Desliga Led Vermelho",
+        "x": 1740,
+        "y": 520,
+        "wires": [
+            [
+                "ace1e6de0fbc60eb"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "da59847b0fdf6aa6",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "function 34",
+        "func": "if(msg.payload == 'ATIVADO'){\n    global.set('funcaoAlarme',1);\n}\nelse if(msg.payload == 'DESATIVADO'){\n    global.set('funcaoAlarme',0);\n}\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 1720,
+        "wires": [
+            [
+                "df98bab024935e98"
+            ]
+        ]
+    },
+    {
+        "id": "a21aed97df93a10a",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Campo de seleção de horário (picker)",
+        "info": "",
+        "x": 250,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "461d1cb7ad4beeb0",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Fica em loop até desacionar (var alarmeDisparado)",
+        "info": "",
+        "x": 1350,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "bcb629dec343a421",
+        "type": "link out",
+        "z": "45bdddcb3db1de4f",
+        "name": "link out 1",
+        "mode": "link",
+        "links": [
+            "ca58458dc2214685"
+        ],
+        "x": 1145,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "ca58458dc2214685",
+        "type": "link in",
+        "z": "45bdddcb3db1de4f",
+        "name": "link in 1",
+        "links": [
+            "bcb629dec343a421"
+        ],
+        "x": 105,
+        "y": 620,
+        "wires": [
+            [
+                "1477b810e6559315"
+            ]
+        ]
+    },
+    {
+        "id": "5498dcdb60aee80b",
+        "type": "link in",
+        "z": "45bdddcb3db1de4f",
+        "name": "link in 2",
+        "links": [
+            "06c4170090b14f46"
+        ],
+        "x": 105,
+        "y": 660,
+        "wires": [
+            [
+                "1477b810e6559315"
+            ]
+        ]
+    },
+    {
+        "id": "06c4170090b14f46",
+        "type": "link out",
+        "z": "45bdddcb3db1de4f",
+        "name": "link out 2",
+        "mode": "link",
+        "links": [
+            "5498dcdb60aee80b"
+        ],
+        "x": 1045,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "1970534dbc29e713",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Executa uma vez ao iniciar",
+        "info": "",
+        "x": 190,
+        "y": 1340,
+        "wires": []
+    },
+    {
+        "id": "45b0f429c98e2b67",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Grava em arquivo valores das variáveis",
+        "info": "",
+        "x": 910,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "68d4d1716bfe2b5e",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Parte da seleção dos dias da semana",
+        "info": "",
+        "x": 230,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "7bec16de8ee5e285",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Controle de disparo do alarme",
+        "info": "",
+        "x": 220,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "7e8f4c6a74944dae",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Dispara mensagem telegram",
+        "func": "global.set('tampaEstavaAberta', 1);     \n\nmsg.payload = {}\nmsg.payload.chatId = 977983065;\nmsg.payload.type = 'message';\n\nvar d = new Date();\nvar hours = d.getHours()\nvar minutes = d.getMinutes();\n\nmsg.payload.content = '📣Alerta disparado \\n' + '\\nTAMPA JÁ ESTAVA ABERTA!\\n\\n🕜'+hours +\":\"+ minutes;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1540,
+        "y": 340,
+        "wires": [
+            [
+                "54184c8d3cd91198"
+            ]
+        ]
+    },
+    {
+        "id": "54184c8d3cd91198",
+        "type": "telegram sender",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "bot": "7a5bf1abb28ed346",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1770,
+        "y": 340,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9f71b9f77486b41e",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 17=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Liga Buzzer",
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "d382e128263fb1ec"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d382e128263fb1ec",
+        "type": "delay",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 480,
+        "y": 100,
+        "wires": [
+            [
+                "118d50d9581afd4d"
+            ]
+        ]
+    },
+    {
+        "id": "118d50d9581afd4d",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 17=0",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Desliga Buzzer",
+        "x": 660,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "cd149751420c53be",
+        "type": "inject",
+        "z": "45bdddcb3db1de4f",
+        "name": "Executa ao ligar",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "9f71b9f77486b41e",
+                "65cb8bf63c4f60e2"
+            ]
+        ]
+    },
+    {
+        "id": "8dc6b6db650a8947",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Emite um beep ao ligar",
+        "info": "",
+        "x": 160,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "10cb38caacb59c49",
+        "type": "delay",
+        "z": "45bdddcb3db1de4f",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "20",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1480,
+        "y": 380,
+        "wires": [
+            [
+                "623b9132723f8223"
+            ]
+        ]
+    },
+    {
+        "id": "623b9132723f8223",
+        "type": "function",
+        "z": "45bdddcb3db1de4f",
+        "name": "Desliga Alarme",
+        "func": "global.set('alarmeDisparado',0);\nglobal.set('tampaEstavaAberta',0);\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1640,
+        "y": 380,
+        "wires": [
+            [
+                "d7081d4388c6662e"
+            ]
+        ]
+    },
+    {
+        "id": "d7081d4388c6662e",
+        "type": "debug",
+        "z": "45bdddcb3db1de4f",
+        "name": "debug 60",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1820,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "18d66370c3412826",
+        "type": "switch",
+        "z": "45bdddcb3db1de4f",
+        "name": "Liga / Desliga Alarme",
+        "property": "payload",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "eq",
+                "v": "1",
+                "vt": "str"
+            },
+            {
+                "t": "eq",
+                "v": "0",
+                "vt": "str"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 2,
+        "x": 520,
+        "y": 640,
+        "wires": [
+            [
+                "c69f11b09d13cb19"
+            ],
+            [
+                "441ac47852f8958a"
+            ]
+        ]
+    },
+    {
+        "id": "65cb8bf63c4f60e2",
+        "type": "exec",
+        "z": "45bdddcb3db1de4f",
+        "command": "gpioset gpiochip0 20=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Led amarelo",
+        "x": 330,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "d4ab6a5e3e2356d3",
+        "type": "comment",
+        "z": "45bdddcb3db1de4f",
+        "name": "Caso tampa aberta",
+        "info": "",
+        "x": 1510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "813d42f8b4f969b3",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Liga",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 670,
+        "y": 100,
+        "wires": [
+            [
+                "79417041498e8316"
+            ]
+        ]
+    },
+    {
+        "id": "40b45dd1e51f06a9",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Liga",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 320,
+        "wires": [
+            [
+                "9625d05e0568db1c"
+            ]
+        ]
+    },
+    {
+        "id": "5470503ed062640c",
+        "type": "debug",
+        "z": "aecc3e96053b78fa",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "9625d05e0568db1c",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "gpioset gpiochip0 21=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Led vermelho",
+        "x": 440,
+        "y": 320,
+        "wires": [
+            [
+                "5470503ed062640c"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "bf52105599dabb60",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 260,
+        "y": 660,
+        "wires": [
+            [
+                "b272f62f79500899"
+            ]
+        ]
+    },
+    {
+        "id": "b272f62f79500899",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "cat /sys/class/thermal/thermal_zone0/temp",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "",
+        "x": 530,
+        "y": 660,
+        "wires": [
+            [
+                "82d71e9c01a32bca"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "8e74f473a88021c0",
+        "type": "debug",
+        "z": "aecc3e96053b78fa",
+        "name": "debug 40",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 660,
+        "wires": []
+    },
+    {
+        "id": "82d71e9c01a32bca",
+        "type": "function",
+        "z": "aecc3e96053b78fa",
+        "name": "function 31",
+        "func": "msg.payload = parseInt(msg.payload.substring(0, 2)) + \"° C\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 830,
+        "y": 660,
+        "wires": [
+            [
+                "8e74f473a88021c0"
+            ]
+        ]
+    },
+    {
+        "id": "212ddfc86cd51088",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Desliga",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 670,
+        "y": 160,
+        "wires": [
+            [
+                "ef4fdc9af7274c67"
+            ]
+        ]
+    },
+    {
+        "id": "ef4fdc9af7274c67",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "gpioset gpiochip0 20=0",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Led amarelo",
+        "x": 830,
+        "y": 160,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "7a3bc22f2c3f14f0",
+        "type": "comment",
+        "z": "aecc3e96053b78fa",
+        "name": "Liga led vermelho (alarme)",
+        "info": "",
+        "x": 470,
+        "y": 280,
+        "wires": []
+    },
+    {
+        "id": "9a69bd2fdc6c8393",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Desliga",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 230,
+        "y": 380,
+        "wires": [
+            [
+                "6db389d0d281613a"
+            ]
+        ]
+    },
+    {
+        "id": "36cd1a18263e5325",
+        "type": "debug",
+        "z": "aecc3e96053b78fa",
+        "name": "debug 42",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 740,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "6db389d0d281613a",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "gpioset gpiochip0 21=0",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Led vermelho",
+        "x": 440,
+        "y": 380,
+        "wires": [
+            [
+                "36cd1a18263e5325"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "feb2d7ac77daca9b",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Obtem informação",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 250,
+        "y": 500,
+        "wires": [
+            [
+                "020ac1891071d77f"
+            ]
+        ]
+    },
+    {
+        "id": "020ac1891071d77f",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "sudo gpioget gpiochip0 16",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Sensor da tampa",
+        "x": 450,
+        "y": 500,
+        "wires": [
+            [
+                "e609072dd5fb0dc9"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "ee1aacb1595b37a3",
+        "type": "debug",
+        "z": "aecc3e96053b78fa",
+        "name": "debug 43",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 820,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "e609072dd5fb0dc9",
+        "type": "function",
+        "z": "aecc3e96053b78fa",
+        "name": "function 32",
+        "func": "msg.payload = parseInt(msg.payload.substring(0));\n\n\n//msg.payload = parseInt(msg.payload.substring(0, 2)) + \"° C\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 670,
+        "y": 500,
+        "wires": [
+            [
+                "ee1aacb1595b37a3"
+            ]
+        ]
+    },
+    {
+        "id": "be67872a09a218cb",
+        "type": "comment",
+        "z": "aecc3e96053b78fa",
+        "name": "Sensor de tampa aberta",
+        "info": "",
+        "x": 460,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "6df5ba399dd2a1d9",
+        "type": "comment",
+        "z": "aecc3e96053b78fa",
+        "name": "Documentação libgpiod",
+        "info": "Example:\n\ngpioset gpiochip0 23=1\n\nThere are currently six command-line tools available:\n\n* gpiodetect - list all gpiochips present on the system, their names, labels\n               and number of GPIO lines\n\n* gpioinfo   - list all lines of specified gpiochips, their names, consumers,\n               direction, active state and additional flags\n\n* gpioget    - read values of specified GPIO lines\n\n* gpioset    - set values of specified GPIO lines, potentially keep the lines\n               exported and wait until timeout, user input or signal\n\n* gpiofind   - find the gpiochip name and line offset given the line name\n\n* gpiomon    - wait for events on GPIO lines, specify which events to watch,\n               how many events to process before exiting or if the events\n               should be reported to the console",
+        "x": 960,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "df0a9daa4fbfe0b8",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Liga",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 270,
+        "y": 840,
+        "wires": [
+            [
+                "c31a49102edca706"
+            ]
+        ]
+    },
+    {
+        "id": "92038cd1c8fdb69a",
+        "type": "debug",
+        "z": "aecc3e96053b78fa",
+        "name": "debug 52",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 840,
+        "wires": []
+    },
+    {
+        "id": "c31a49102edca706",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "gpioset gpiochip0 17=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Buzzer",
+        "x": 460,
+        "y": 840,
+        "wires": [
+            [
+                "92038cd1c8fdb69a"
+            ],
+            [
+                "92038cd1c8fdb69a"
+            ],
+            [
+                "92038cd1c8fdb69a"
+            ]
+        ]
+    },
+    {
+        "id": "62a62e682bd4b708",
+        "type": "comment",
+        "z": "aecc3e96053b78fa",
+        "name": "Liga Buzzer",
+        "info": "",
+        "x": 470,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "240f77e713398526",
+        "type": "inject",
+        "z": "aecc3e96053b78fa",
+        "name": "Desliga",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 310,
+        "y": 900,
+        "wires": [
+            [
+                "277fdf2fe88efea4"
+            ]
+        ]
+    },
+    {
+        "id": "320952612434be30",
+        "type": "debug",
+        "z": "aecc3e96053b78fa",
+        "name": "debug 53",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 780,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "277fdf2fe88efea4",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "gpioset gpiochip0 17=0",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Buzzer",
+        "x": 480,
+        "y": 900,
+        "wires": [
+            [
+                "320952612434be30"
+            ],
+            [],
+            []
+        ]
+    },
+    {
+        "id": "eb72c32ad01ac554",
+        "type": "comment",
+        "z": "aecc3e96053b78fa",
+        "name": "PINOUT",
+        "info": "1 - Sensor da tampa - Fio Vermelho (+)\n9 - Sensor da tampa - Fio Preto (-)\n15 - Sensor da tampa - Fio Verde (sinal)\n17 - Led Verde - Fio Verde (+)\n20 - Led Amarelo - Fio Amarelo (+)\n21 - Led Vermelho - Fio vermelho (+)\n25 - Comum aos leds - Fio branco (-)\n36 - Buzzer - Fio Roxo (+)\n39 - Buzzer - Fio Branco (-)\n\n\n 1. ",
+        "x": 920,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "79417041498e8316",
+        "type": "exec",
+        "z": "aecc3e96053b78fa",
+        "command": "sudo gpioset gpiochip0 20=1",
+        "addpay": "",
+        "append": "",
+        "useSpawn": "false",
+        "timer": "",
+        "winHide": false,
+        "oldrc": false,
+        "name": "Led amarelo",
+        "x": 830,
+        "y": 100,
+        "wires": [
+            [],
+            [],
+            []
+        ]
+    }
+]
